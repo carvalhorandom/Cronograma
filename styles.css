@@ -1,0 +1,83 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Container do calendário */
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 350px;
+}
+
+/* Cabeçalho do calendário */
+.calendar-header {
+    background-color: #007BFF;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilo da tabela do calendário */
+table.calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilo das células */
+th, td {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Cores dos dias da semana */
+th {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Estilo dos dias vazios (quando o mês começa no meio da semana) */
+.empty {
+    background-color: #f7f7f7;
+}
+
+/* Estilo dos dias do mês */
+td {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+td:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+td:active {
+    background-color: #0056b3;
+}
+
+/* Estilo para o fim de semana */
+td:nth-child(1), td:nth-child(7) {
+    color: #f44336; /* Vermelho para domingo e sábado */
+}
